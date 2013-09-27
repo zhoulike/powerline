@@ -1,3 +1,13 @@
+My work                                                                        
+=========
+`@fholgado's minibufexpl <https://github.com/fholgado/minibufexpl.vim>`_ is not fully compitable with powerline because of the following setting:
+
+* let g:miniBufExplForceSyntaxEnable = 1                                        
+
+So I made patches to them respectively to address the color lose problem(`Issue#230 <https://github.com/lokaltog/powerline/issues/230>`_, `Issue#668 <https://github.com/Lokaltog/powerline/issues/668>`_, etc.).  
+                                                                                
+If you has the same or similar problem. You can try `patched minibufexpl <https://github.com/zhoulike/minibufexpl.vim>`_ and this repo.
+
 Powerline
 =========
 

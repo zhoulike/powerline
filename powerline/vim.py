@@ -185,6 +185,9 @@ def setup(pyeval=None, pycmd=None):
 	vim.command('	autocmd! VimLeavePre * :{pycmd} powerline.shutdown()'.format(pycmd=pycmd))
 	vim.command('augroup END')
 
+	# Export a command to address the color lose problem.
+	vim.command('command! PowerlineUpdate :{pycmd} powerline.reset_highlight()'.format(pycmd=pycmd))
+
 	# Is immediately changed after new_window function is run. Good for global 
 	# value.
 	vim.command('set statusline=%!{pyeval}(\'powerline.new_window()\')'.format(pyeval=pyeval))
